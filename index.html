@@ -5,8 +5,8 @@
   <title>Welcome to daze</title>
   <style>
     body {
-      background-color: #0e0e0e;
-      color: #e0e0e0;
+      background-color: #1b1f23;
+      color: #ffffff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 2rem;
@@ -16,7 +16,7 @@
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
-      color: #fff;
+      color: #ffffff;
     }
 
     p.subtitle {
@@ -26,35 +26,35 @@
     }
 
     h2 {
-      font-size: 1.4rem;
-      color: #fff;
+      font-size: 1.5rem;
+      color: #ffffff;
       border-bottom: 2px solid #222;
       padding-bottom: 0.5rem;
-      margin-top: 3rem;
+      margin-top: 2rem;
       margin-bottom: 1.5rem;
     }
 
     .product {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 1rem;
-      margin-bottom: 1rem;
+      background-color: #2b3642;
+      border: 1px shadow # ;
+      padding: 0.8rem;
+      margin-bottom: 0.85rem;
     }
 
     .product h3 {
       margin: 0;
       font-size: 1.1rem;
-      color: #f0f0f0;
+      color: # ;
     }
 
     .product p {
       margin: 0.3rem 0;
       font-size: 0.9rem;
-      color: #ccc;
+      color: #b0b0b0;
     }
 
     .sponsors {
-      margin-top: 4rem;
+      margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -63,13 +63,65 @@
       border-top: 1px solid #333;
     }
 
+.sponsor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: #2d2f33;
+  border-radius: 4px;
+  margin: 4px;
+  cursor: default;
+}
+
+/* Tooltip Box */
+.sponsor::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999;
+}
+
+/* Tooltip Arrow */
+.sponsor::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #111;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 998;
+}
+
+/* Show tooltip on hover */
+.sponsor:hover::after,
+.sponsor:hover::before {
+  opacity: 1;
+}
+
+
     .sponsors div {
-      background-color: #1a1a1a;
-      padding: 0.75rem 1.5rem;
+      background-color: #2b3642;
+      padding: 0.75rem 1.2rem;
       font-weight: bold;
-      color: #999;
+      color: #ccc;
       border: 1px solid #333;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
 
     .footer {
@@ -226,37 +278,14 @@
 
   <h2>Monitors</h2>
 
-
-<h2>Monitors</h2>
-
-<div class="product">
-  <h3>Guide on the monitor names</h3>
-  <p><strong>(ex: daze XXXXXX)</strong></p>
-  <p>
-    <strong>B</strong> = Basic, <strong>G</strong> = Gaming, <strong>U</strong> = Ultrawide, <strong>UG</strong> = Ultrawide Gaming, <strong>UB</strong> = Ultrawide Basic<br>
-    <strong>1</strong> = 2023, <strong>2</strong> = 2024, <strong>3</strong> = 2025<br>
-    <strong>1</strong> = 60Hz, 2 = 75Hz, 3 = 120Hz, 4 = 144Hz, 5 = 240Hz, 6 = 360Hz, 7 = 480Hz, 8 = 540Hz, 9 = 600Hz<br>
-    <strong>T</strong> = TN, <strong>V</strong> = VA, <strong>I</strong> = IPS, <strong>O</strong> = OLED, <strong>M</strong> = AMOLED, <strong>F</strong> = Fast IPS<br>
-    <strong>1</strong> = 21", 2 = 23", 3 = 24", 4 = 27", 5 = 30", 6 = 32"
-  </p>
-  <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa;">
-    Examples: <code>B213I3 WorkView 24</code>, <code>B223I4 ClarityPro 27</code>, <code>B233O4X VisionGlass HDR</code>, etc.
-  </p>
-</div>
-
-
 <!-- Basic / Home / Office -->
 <div class="product">
   <h3> B213I3 WorkView 24</h3>
   <p>24" • IPS • 1080p • 60Hz</p>
 </div>
 <div class="product">
-  <h3> B223I4 ClarityPro 27</h3>
-  <p>27" • IPS • 1440p • 75Hz</p>
-</div>
-<div class="product">
   <h3> B233O4X VisionGlass HDR</h3>
-  <p>27" • OLED • 1440p • 75Hz • HDR</p>
+  <p>27" • OLED • 4K • 60Hz • HDR 10 • Dolby Vision • Dolby Atmos Support</p>
 </div>
 
 <!-- Gaming -->
@@ -276,27 +305,49 @@
 <!-- Cutting Edge -->
 <div class="product">
   <h3> C331M7 NanoBurst 22</h3>
-  <p>22" • AMOLED • 1080p • 480Hz</p>
+  <p>22" • AMOLED • 1440p • 480Hz</p>
 </div>
 <div class="product">
   <h3> C332M8 NanoBurst 22 Ultra</h3>
-  <p>22" • AMOLED • 1080p • 540Hz</p>
+  <p>22" • Fast IPS • 1080p • 540Hz • DyAc 2</p>
 </div>
 
 
 
   <div class="sponsors">
-	<div>ByteFuel</div>
-	<div>Velza</div>
-	<div>Vetraq</div>
-	<div>Keonix</div>
-	<div>Glideon</div>
-	<div>Auralis</div>
-	<div>BlizzCore</div>
-	<div>ZynWorks</div>
-	<div>CoolForge</div>
-	<div>PIXELMOBI</div>
-	<div>ULTRAPC</div>
+	<div class="sponsor" data-tooltip="Founded in Austin, Texas.">
+  <span>ByteFuel</span> <img src="images/us.png" alt="USA" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Brussels, Belgium.">
+  <span>Velza</span> <img src="images/be.png" alt="Belgium" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Zurich, Switzerland.">
+  <span>Vetraq</span> <img src="images/ch.png" alt="Switzerland" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Tokyo, Japan.">
+  <span>Koenix</span> <img src="images/jp.png" alt="Japan" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Amsterdam, Netherlands.">
+  <span>Glideon</span> <img src="images/nl.png" alt="Netherlands" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Toulouse, France.">
+  <span>Auralis</span> <img src="images/fr.png" alt="France" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Toronto, Canada.">
+  <span>BlizzCore</span> <img src="images/ca.png" alt="Canada" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Geylang, Singapore.">
+  <span>ZynWorks</span> <img src="images/sg.png" alt="Singapore" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Berlin, Germany.">
+  <span>CoolForge</span> <img src="images/de.png" alt="Deutschland" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Stockholm, Sweden.">
+  <span>PIXELMOBI</span> <img src="images/se.png" alt="Sweden" />
+  	</div>
+	<div class="sponsor" data-tooltip="Founded in Manchester, England.">
+  <span>ULTRAPC</span> <img src="images/gb.png" alt="Great Britain" />
+  	</div>
   </div>
 
   <div class="footer">© 2025 daze hardware mockup — not a real product.</div>
