@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to daze</title>
+  <title>daze</title>
   <style>
     body {
       background-color: #1b1f23;
@@ -60,7 +60,7 @@
       gap: 1rem;
       justify-content: center;
       padding: 1rem;
-      border-top: 1px solid #333;
+      border-top: 0px solid #333;
     }
 
 .sponsor {
@@ -70,7 +70,7 @@
   gap: 6px;
   padding: 8px 12px;
   background-color: #2d2f33;
-  border-radius: 4px;
+  border-radius: 0px;
   margin: 4px;
   cursor: default;
 }
@@ -82,15 +82,18 @@
   bottom: 110%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #111;
-  color: #fff;
+  background-color: #2b3642;
+  color: #999999;
   padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 0.75rem;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #45515f;
+  font-size: 0.85rem;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0s linear;
   z-index: 999;
 }
 
@@ -104,7 +107,7 @@
   border: 6px solid transparent;
   border-top-color: #111;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0s linear;
   z-index: 998;
 }
 
@@ -120,7 +123,7 @@
       padding: 0.75rem 1.2rem;
       font-weight: bold;
       color: #ccc;
-      border: 1px solid #333;
+      border: 0px solid #333;
       font-size: 0.95rem;
     }
 
@@ -130,12 +133,34 @@
       font-size: 0.8rem;
       margin-top: 2rem;
     }
+    
+        a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+    
   </style>
 </head>
 <body>
 
   <h1>welcome to daze.</h1>
-  <p class="subtitle">...the place where you can get what you need.</p>
+  <p class="subtitle">fake pc part/peripherals/sponsors, everything.</p>
 
   <h1>browse through our catalog of...</h1>
   <h2>Processors</h2>
@@ -222,7 +247,7 @@
 
   <div class="product">
     <h3>Keonix K60</h3>
-    <p>60 Mechanical Keyboard • RGB • Hot-swap switches</p>
+    <p>60% Mechanical Keyboard • RGB • Hot-swap switches</p>
   </div>
   <div class="product">
     <h3>Keonix K75</h3>
@@ -312,45 +337,46 @@
   <p>22" • Fast IPS • 1080p • 540Hz • DyAc 2</p>
 </div>
 
-
+<h2><p><a href="laptop.html">Laptops</a></p></h2>
 
   <div class="sponsors">
 	<div class="sponsor" data-tooltip="Founded in Austin, Texas.">
-  <span>ByteFuel</span> <img src="us.png" alt="USA" />
+  <span>ByteFuel</span> <img src="images/us.png" alt="USA" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Brussels, Belgium.">
-  <span>Velza</span> <img src="be.png" alt="Belgium" />
+  <span>Velza</span> <img src="images/be.png" alt="Belgium" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Zurich, Switzerland.">
-  <span>Vetraq</span> <img src="ch.png" alt="Switzerland" />
+  <span>Vetraq</span> <img src="images/ch.png" alt="Switzerland" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Tokyo, Japan.">
-  <span>Koenix</span> <img src="jp.png" alt="Japan" />
+  <span>Koenix</span> <img src="images/jp.png" alt="Japan" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Amsterdam, Netherlands.">
-  <span>Glideon</span> <img src="nl.png" alt="Netherlands" />
+  <span>Glideon</span> <img src="images/nl.png" alt="Netherlands" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Toulouse, France.">
-  <span>Auralis</span> <img src="fr.png" alt="France" />
+  <span>Auralis</span> <img src="images/fr.png" alt="France" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Toronto, Canada.">
-  <span>BlizzCore</span> <img src="ca.png" alt="Canada" />
+  <span>BlizzCore</span> <img src="images/ca.png" alt="Canada" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Geylang, Singapore.">
-  <span>ZynWorks</span> <img src="sg.png" alt="Singapore" />
+  <span>ZynWorks</span> <img src="images/sg.png" alt="Singapore" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Berlin, Germany.">
-  <span>CoolForge</span> <img src="de.png" alt="Deutschland" />
+  <span>CoolForge</span> <img src="images/de.png" alt="Deutschland" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Stockholm, Sweden.">
-  <span>PIXELMOBI</span> <img src="se.png" alt="Sweden" />
+  <span>PIXELMOBI</span> <img src="images/se.png" alt="Sweden" />
   	</div>
 	<div class="sponsor" data-tooltip="Founded in Manchester, England.">
-  <span>ULTRAPC</span> <img src="gb.png" alt="Great Britain" />
+  <span>ULTRAPC</span> <img src="images/gb.png" alt="Great Britain" />
   	</div>
   </div>
 
-  <div class="footer">© 2025 daze hardware mockup — not a real product.</div>
-
+  <div class="footer">arcadie1101@gmail.com</div>
+  <div class="footer">daze</div>
+  
 </body>
 </html>
