@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>daze</title>
+  <style>
+    body {
+      background-color: #1b1f23;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      border-bottom: 2px solid #222;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .product {
+      background-color: #2b3642;
+      
+      padding: 0.8rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .product h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    .product p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+      color: #b0b0b0;
+    }
+
+    .sponsors {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      padding: 1rem;
+      border-top: 0px solid #333;
+    }
+
+.sponsor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: #2d2f33;
+  border-radius: 0px;
+  margin: 4px;
+  cursor: default;
+}
+
+/* Tooltip Box */
+.sponsor::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2b3642;
+  color: #999999;
+  padding: 6px 10px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #45515f;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0s linear;
+  z-index: 999;
+}
+
+/* Tooltip Arrow */
+.sponsor::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #111;
+  opacity: 0;
+  transition: opacity 0s linear;
+  z-index: 998;
+}
+
+/* Show tooltip on hover */
+.sponsor:hover::after,
+.sponsor:hover::before {
+  opacity: 1;
+}
+
+
+    .sponsors div {
+      background-color: #2b3642;
+      padding: 0.75rem 1.2rem;
+      font-weight: bold;
+      color: #ccc;
+      border: 0px solid #333;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+    
+    a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+    
+    <h2><p><a href="laptop.html">Laptops</a></p></h2>
+    
+</style>
+</head>
+<body>
+
+  <h1>daze laptops</h1>
+  <p class="subtitle">fake pc part/peripherals/sponsors, everything.</p>
+
+  <h1>browse through our catalog of...</h1>
+  <h2>Office Laptops</h2>
+  <div class="product">
+    <h3>WorkView 14</h3>
+    <p>14" 1080p AMOLED 60Hz • Aero 3100EL • 8GB DDR5 • Velza 500 NVMe</p>
+    <p>Can be used as an work laptop or as an simple entertainment machine.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 1x USB-C, 2x USB 3.0.</p>
+    <p><b>Accessories included:</b> Laptop backpack.</p>
+  </div>
+  <div class="product">
+    <h3>OfficeEdge 16</h3>
+    <p>16" 1600p AMOLED 120Hz • Prime 3200PL • Aero 3040LS • 16GB DDR5 • Velza 1TB NVMe</p>
+    <p>For light video editing and 3D Modeling.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 2x USB-C, 2x USB 3.0, 1x Micro SD slot, 1x AUX 3.5mm, 1Gbps Ethernet port.</p>
+    <p><b>Accessories included:</b> Laptop backpack, Glideon Core M1.</p>
+  </div>
+  
+  <div class="product">
+    <h3>NovaSlate 16</h3>
+    <p>16" 1600p AMOLED 120Hz • Titanis 3300HL • Core 3060LS • 32GB DDR5 • Velza 1TB NVMe</p>
+    <p>For heavier video editing, 3D rendering and multitasking.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 2x USB-C, 2x USB 3.0, 2x Micro SD slot, 1x AUX 3.5mm, 2.5Gbps Ethernet port.</p>
+    <p><b>Accessories included:</b> Laptop backpack, Glideon Spark M2 Ergonomic, simple 20x20cm mouse pad.</p>
+  
+ </div>
+  <div class="product">
+    <h3>OfficeEdge 18</h3>
+    <p>18" 1440p AMOLED 180Hz • Titanis 3300HXL • Flux 3080LS • 64GB DDR5 • Velza 2TB NVMe</p>
+    <p>For heavier video editing, 3D rendering and multitasking.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 2x USB-C, 2x USB 3.0, 2x Micro SD slot, 1x AUX 3.5mm, 2.5Gbps Ethernet port.</p>
+    <p><b>Accessories included:</b> Laptop backpack, Glideon Spark M2 Ergonomic, simple 35x20cm mouse pad, simple 1080p webcam.</p>
+ </div>
+ 
+   <h2>Gaming Laptops</h2>
+  <div class="product">
+    <h3>NovaBlade 16</h3>
+    <p>14" 1080p IPS LCD 180Hz • Aero 3100EL • Aero 3040 • 8GB DDR5 • Velza 500 NVMe</p>
+    <p>Can be used as both an midtier work laptop or as an lighter gaming machine.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 1x USB-C, 2x USB 3.0.</p>
+    <p><b>Accessories included:</b> Laptop backpack.</p>
+  </div>
+  <div class="product">
+    <h3>NovaBlade Pro 17</h3>
+    <p>17" 1440p IPS LCD 240Hz • Prime 3200PL • Core 3060L • 16GB DDR5 • Velza 1TB NVMe</p>
+    <p>For heavier games, or for those who want more power from an laptop.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 2x USB-C, 2x USB 3.0, 1x Micro SD slot, 1x AUX 3.5mm, 1Gbps Ethernet port.</p>
+    <p><b>Accessories included:</b> Laptop backpack, Glideon Core M1.</p>
+  </div>
+   <div class="product">
+    <h3>NovaBlade Pro Plus 17</h3>
+    <p>17" 1080p IPS LCD 300Hz • Prime 3200PXL • Flux 3080L • 32GB DDR5 • Velza 2TB NVMe</p>
+    <p>If you want an full desktop on your lap, this is the one.</p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 2x USB-C, 2x USB 3.0, 1x Micro SD slot, 1x AUX 3.5mm, 1Gbps Ethernet port.</p>
+    <p><b>Accessories included:</b> Laptop backpack, Glideon Spark M2 Ergonomic, simple 35x20cm mouse pad, simple 1080p webcam.</p>
+  </div>
+  <div class="product">
+    <h3>daze ultra one</h3>
+    <p>18" 1080p IPS LCD 360Hz • Titanis 3300HXL • Prime 3090LS • 32GB DDR5 • Velza 4TB Pro NVMe</p>
+    <p><strong><b>Triple A games. 3D rendering. Game engines. On the go.</b></strong></p>
+    <p><b>Ports:</b> Charging port, 1x HDMI, 1x DisplayPort 2.1, 2x USB-C, 2x Thunderbolt 5, 4x USB 3.2, 2x Micro SD slot, 1x AUX 3.5mm, 2.5Gbps Ethernet port.</p>
+    <p><b>Accessories included:</b> Laptop backpack, Glideon Flux M3, Any Keonix keyboard to choose.</p>
+  </div>
+ 
